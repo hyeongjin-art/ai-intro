@@ -142,7 +142,7 @@ h1.title .hl-green{color:var(--green);text-shadow:0 0 24px rgba(61,255,126,.45)}
   transform:translateX(-50%) rotate(4deg) scaleY(1.2);
 }
 .cover-vs{
-  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:6;
+  position:absolute;left:calc(50% - 46px);top:calc(50% - 46px);z-index:6;
   width:92px;height:92px;border-radius:50%;
   background:var(--amber);color:var(--ink);
   display:flex;align-items:center;justify-content:center;
@@ -150,7 +150,7 @@ h1.title .hl-green{color:var(--green);text-shadow:0 0 24px rgba(61,255,126,.45)}
   box-shadow:0 12px 40px rgba(0,0,0,.35), 0 0 0 8px rgba(255,197,61,.25);
   animation:vsPulse 2.6s ease-in-out infinite;
 }
-@keyframes vsPulse{0%,100%{transform:translate(-50%,-50%) scale(1) rotate(-6deg)}50%{transform:translate(-50%,-50%) scale(1.08) rotate(6deg)}}
+@keyframes vsPulse{0%,100%{transform:scale(1) rotate(-6deg)}50%{transform:scale(1.08) rotate(6deg)}}
 .cover-label{font-family:'IBM Plex Mono';font-size:13px;letter-spacing:.25em;margin-bottom:20px}
 .cover-gui .cover-label{color:var(--coral)}
 .cover-cli .cover-label{color:var(--green)}
@@ -574,7 +574,7 @@ h1.title .hl-green{color:var(--green);text-shadow:0 0 24px rgba(61,255,126,.45)}
     </div>
   </div>
   <div class="cover-divider"></div>
-  <div class="cover-vs rv d5">VS</div>
+  <div class="cover-vs">VS</div>
   <div class="cover-foot">
     <div class="big rv d6">AI, 5분 만에 감 잡기</div>
     <div class="meta rv d7">FOR MY FRIEND · 2026.06<br>PRESENTED BY 박형진</div>
